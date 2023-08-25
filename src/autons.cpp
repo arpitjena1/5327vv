@@ -14,10 +14,13 @@ void skills(){
 	//move({{-70, 30, -180}}, 70, arms::REVERSE );//follow L shape barrier until get to middle- tune
 	
 	move({{-100, -56, 180}}, 100, arms::NONE); //bash triballs
+
 	//get back to the same place
+	move({{0, 0, 0}}, 100, arms::NONE);
 
 	//move to left side
 	move({{-60, -60, 90}}, 100, arms::NONE);
+	
 	//bash triballs
 	move({{-100, -56, 180}}, 100, arms::NONE);
 	move({{-60, -60, 90}}, 100, arms::NONE);
@@ -27,7 +30,8 @@ void skills(){
 	turn({{10, -30}}); //turn towards goal from middle
 	move({{-100, -30, 180}}, 100, arms::NONE); //bash from center
 
-	
+	move({{-90, 10, 90}}, 100, arms::NONE); //go near right side of field
+	move({{-100, 30, 110}}, 100, arms::NONE); //bash triballs from side
 
 	
 }
