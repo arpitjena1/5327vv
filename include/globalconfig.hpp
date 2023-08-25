@@ -7,4 +7,5 @@ extern pros::Motor intake;
 extern pros::Rotation cataRot;
 extern pros::ADIDigitalOut wings;
 extern pros::ADIDigitalOut intakepist;
+extern pros::ADIDigitalOut blockers;
 extern pros::Controller master;

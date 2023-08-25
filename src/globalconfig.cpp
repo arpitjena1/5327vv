@@ -8,3 +8,4 @@ pros::Optical optical(13);
 pros::Controller master(CONTROLLER_MASTER);
 pros::ADIDigitalOut wings('D');
 pros::ADIDigitalOut intakepist('F');
+pros::ADIDigitalOut blockers('A');
