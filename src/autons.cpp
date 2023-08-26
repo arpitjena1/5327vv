@@ -12,32 +12,40 @@ void skills(){
     using namespace arms::chassis;
 
 	//fire cata for 44 triballs
-	catafire(50);
-	//move({{-80, 0}}, 100, arms::NONE); //move through barrier
-	//move({{-70, 30, -180}}, 70, arms::REVERSE );//follow L shape barrier until get to middle- tune
+	//catafire(50);
+	move({{-80, 0,0}}, 100, arms::REVERSE); //move through barrier
+
+
+  
+	move({{-80, -10, 90}}, 100, arms::REVERSE );//follow L shape barrier close;lk nb
+	move({{-55, -20, 90}}, 100, arms::NONE); //l shape
 	
-	move({{-100, -56, 180}}, 100, arms::NONE); //bash triballs
+	move({{-100, -56, 180}}, 100, arms::REVERSE); //bash triballs
 
 	//get back to the same place
-	move({{0, 0, 0}}, 100, arms::NONE);
+	move({{-55, -20, 90}}, 100, arms::NONE);
 
 	//move to left side
-	move({{-60, -60, 90}}, 100, arms::NONE);
+	move({{-55, -85, 90}}, 100, arms::NONE);
 
 	//bash triballs
-	move({{-100, -56, 180}}, 100, arms::NONE);
-	move({{-60, -60, 90}}, 100, arms::NONE);
+	move({{-100, -70, 180}}, 100, arms::REVERSE);
+	move({{-55, -85, 90}}, 100, arms::NONE);
 
 	//come to middle
-	move({{-60, -30, 90}}, 100, arms::NONE);
-	turn({{10, -30}}); //turn towards goal from middle
-	move({{-100, -30, 180}}, 100, arms::NONE); //bash from center
+	move({{-55, -71, 90}}, 100, arms::NONE);
+	move({{-100, -71, 0}}, 100, arms::REVERSE); //bash from center
 
+	//go to the right
+	move({{-77, -20, 110}}, 100, arms::NONE);
+	move({{-77, 5, 0}}, 100, arms::NONE);
+
+	/*
 	move({{-90, 10, 90}}, 100, arms::NONE); //go near right side of field 
 	move({{-100, 30, 110}}, 100, arms::NONE); //bash triballs 4 times
 	move({{-90, 10, 90}}, 100, arms::NONE); 
 	move({{-100, 30, 110}}, 100, arms::NONE); 
-	
+	*/
 }
 
 
