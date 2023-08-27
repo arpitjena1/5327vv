@@ -1,4 +1,5 @@
 #include "autons.hpp"
+#include "ARMS/chassis.h"
 
 void catafire(int times){
 	intakepist.set_value(true);
@@ -18,34 +19,46 @@ void skills(){
 
   
 	move({{-80, -10, 90}}, 100, arms::REVERSE );//follow L shape barrier close;lk nb
-	move({{-55, -20, 90}}, 100, arms::NONE); //l shape
-	
-	move({{-100, -56, 180}}, 100, arms::REVERSE); //bash triballs
+	move({{-60, -25, 90}}, 70, arms::NONE); //l shape
+	waitUntilFinished(5);
+	move({{-100, -50, 180}}, 100, arms::REVERSE); //bash triballs
 
 	//get back to the same place
-	move({{-55, -20, 90}}, 100, arms::NONE);
+	move({{-55, -20, -90}}, 70, arms::NONE);
+
 
 	//move to left side
-	move({{-55, -85, 90}}, 100, arms::NONE);
+	move({{-55, -85, -90}}, 50, arms::NONE);
 
 	//bash triballs
-	move({{-100, -70, 180}}, 100, arms::REVERSE);
-	move({{-55, -85, 90}}, 100, arms::NONE);
+	move({{-100, -60, -180}}, 100, arms::REVERSE);
 
-	//come to middle
-	move({{-55, -71, 90}}, 100, arms::NONE);
-	move({{-100, -71, 0}}, 100, arms::REVERSE); //bash from center
+	move({{-55, -85, -90}}, 50, arms::NONE);
 
-	//go to the right
-	move({{-77, -20, 110}}, 100, arms::NONE);
-	move({{-77, 5, 0}}, 100, arms::NONE);
+	//bash triballs
+	move({{-100, -70, -180}}, 100, arms::REVERSE);
+	move({{-55, -95, -90}}, 50, arms::NONE);
+
+	//bash triballs
+	move({{-100, -80, -180}}, 100, arms::REVERSE);
+	move({{-55, -85, 0}}, 50, arms::NONE);
+	
+
 
 	/*
-	move({{-90, 10, 90}}, 100, arms::NONE); //go near right side of field 
-	move({{-100, 30, 110}}, 100, arms::NONE); //bash triballs 4 times
-	move({{-90, 10, 90}}, 100, arms::NONE); 
-	move({{-100, 30, 110}}, 100, arms::NONE); 
+	move({{-55, -70, 90}}, 50, arms::NONE);
+	move({{-100, -50, 0}}, 100, arms::REVERSE); //bash from center
+	move({{-55, -70, -90}}, 50, arms::NONE);
+	move({{-60, -25, 90}}, 70, arms::NONE); 
+	move({{-100, -50, 180}}, 100, arms::REVERSE); //bash triballs
 	*/
+
+
+
+
+	
+
+	
 }
 
 
